@@ -1,0 +1,12 @@
+<!-- This is a getter, this is getting a string to make it an actual code 
+the post  -->
+
+<h1><%= @post.title %></h1>
+<p><%= @post.body %></p>
+	<a href="/<%= @post.id %>/edit">edit</a>
+
+	<form method="POST" action="/<%= @post.id %>">
+	<input type ="hidden" name="_method" value="DELETE">
+	<input type="submit" value="Delete">
+
+</form>
